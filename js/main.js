@@ -39,3 +39,14 @@
     
 })(jQuery);
 
+function course(){
+    let password=document.getElementById("roll").value; 
+    if(password=="free@stw"){
+    alert("Access granted, Fill out the form to complete the session, Thanks");
+    window.open("xstege254fr.html");
+    }
+    else {
+    alert("You entered a wrong enroll key, contact STW admin for the correct enroll key,Thanks");
+}
+}
+
