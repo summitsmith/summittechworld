@@ -21,6 +21,7 @@
         <link href="lib/slick/slick.css" rel="stylesheet">
         <link href="libs/slick/slick-theme.css" rel="stylesheet">
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="css/monk.css" rel="stylesheet">
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
@@ -51,7 +52,7 @@
                                     <div class="topbar-social">
                                         <a href="https://twitter.com/@summitficland"><i class="fab fa-twitter"></i></a>
                                         <a href="https://m.me/ssembatya.shafic"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="https://www.youtube.com/channel/UCGeROyFPpd6SfYe14XYrUXA"><i class="fab fa-youtube"></i></a>
+                                        <a href="https://www.youtube.com/channel/UClEnyRWnAqnA0R2QK0xNk5"><i class="fab fa-youtube"></i></a>
                                         <a href="https://www.instagram.com/summitficland/"><i class="fab fa-instagram"></i></a>
                                         <a href="https://www.linkedin.com/in/summittechworld"><i class="fab fa-linkedin-in"></i></a>
                                     </div>
@@ -106,15 +107,74 @@
                         <div class="col-12">
                             <h2 class="section-title">css and html one month free course (active)</h2>
                             <h3>Hi there, you will be required to enroll yourself for this free online course</h3>
+                             <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-green w3-large">Enroll now</button>
+                                <div id="id01" class="w3-modal">
+                                    <span onclick="document.getElementById('id01').style.display='none'" 
+                                    class="w3-closebtn w3-hover-red w3-container w3-padding-16 w3-display-topright w3-xxlarge">&times;</span>
+                                    <div class="w3-modal-content w3-card-8 w3-animate-zoom" style="max-width:600px">
+                                    
+                                      <div class="w3-center"><br>
+                                        <img src="img/logo.jpg" alt="Avatar" style="width:40%" class="w3-circle w3-margin-top">
+                                      </div>
+                                  
+                                      <div class="w3-container">
+                                        <div class="w3-section">
+                                          <form action="">
+                                           
+                                          <label><b>Enroll key</b></label>
+                                          <input class="w3-input w3-border" type="password" id="roll" placeholder="Enter enroll key here">
+                                          
+                                          <button type="submit" class="w3-btn w3-btn-block w3-green w3-section" onclick="course();">Enroll</button>
+                                          
+                                          </form>
+                                          
+                                        </div>
+                                      </div>
+                                  
+                                      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                                        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
+                                        <span class="w3-right w3-padding w3-hide-small">Forgot Enroll key? <a href="https://wa.me/+256776646550">whatsapp the team</a></span>
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+
+
+
                             
-                            <form action="">
-                                <p>Enter the enroll key here to proceed</p>
-                                <input type="password" id="roll">
-                                <button  onclick="course();">Enroll</button>
-                            </form>
-                            <script>
-                                
-                            </script>
+                         
+                            <h2 class="section-title">Internship opportunities</h2>
+                            <h3>We offer intern opportunities to students in the following sector of of now,</h3>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Web development</li>
+                                    <li class="list-group-item">User interface and design</li>
+                                    <li class="list-group-item">Android app development</li>
+                                    <li class="list-group-item">Programming</li>
+                                    <li class="list-group-item">ICT Teachers</li>
+                                </ul>
+                                <button onclick="document.getElementById('id02').style.display='block'" class="w3-btn w3-green w3-large">Apply Now</button>
+                                <div id="id02" class="w3-modal">
+                                    <span onclick="document.getElementById('id02').style.display='none'" 
+                                    class="w3-closebtn w3-hover-red w3-container w3-padding-16 w3-display-topright w3-xxlarge">&times;</span>
+                                    <div class="w3-modal-content w3-card-8 w3-animate-zoom" style="max-width:400px">
+                                    
+                                      <div class="w3-center"><br>
+                                        <img src="img/logo.jpg" alt="Avatar" style="width:40%" class="w3-circle w3-margin-top">
+                                      </div>
+
+                                      <div>
+                                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-OgiOB1KMhLdXXnG6mTzFBQMJJu7Cmb3wDBu6aEffv7yKNQ/viewform?embedded=true" width="400" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                      </div>
+                           
+                                  
+                                      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                                        <button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
+                                        <span class="w3-right w3-padding w3-hide-small">Email <a href="mailto:summittechworld@gmail.com">STW?</a></span>
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+                            
                             <!--
                                 <ul class="list-group">
                                 <li class="list-group-item">First list item</li>
@@ -230,7 +290,7 @@
                             <p>&copy; <a href="index.html">Summit Tech World</a>, All Rights Reserved.</p>
                         </div>
                         <div class="col-md-6">
-                            <p>View our   <a href="terms and conditions.asp">Terms and conditions</a></p>
+                            <p>View our   <a href="terms and conditions.pdf">Terms and conditions</a></p>
                         </div>
                     </div>
                 </div>
@@ -261,5 +321,6 @@
                 var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
             })();
           </script>
+
     </body>
 </html>
