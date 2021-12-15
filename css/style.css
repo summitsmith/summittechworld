@@ -211,10 +211,12 @@ a:focus {
 /*******************************/
 .page-header {
     position: relative;
-    margin-bottom: 45px;
+    margin-bottom: 10px;
     padding: 80px 0;
     text-align: center;
     background: linear-gradient(to right, #00539C, #4F84C4 50%);
+    border: solid purple;
+    border-radius: 170px;
 }
 
 .page-header h2 {
@@ -716,14 +718,14 @@ a:focus {
     border: none;
     height: auto;
     cursor: pointer;
-    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
     -webkit-transition: .4s all;
     -moz-transition: .4s all;
     transition: .4s all;
 }
 
 .about .youtube-player img:hover {
-    -webkit-filter: brightness(90%);
+    filter: brightness(90%);
 }
 
 .about .youtube-player .play {
