@@ -50,3 +50,13 @@ function course(){
 }
 }
 
+function tok(){
+    let password=document.getElementById("rol").value; 
+    if((password=="4534")||(password=="1232")){
+    alert("Access granted, kindly download your contract letter fill and email back");
+    window.open("fr.pdf");
+    }
+    else {
+    alert("You entered a wrong token, try again!!!");
+}
+}
